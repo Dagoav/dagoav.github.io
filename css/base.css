@@ -1,1 +1,65 @@
-*{margin:0;padding:0;box-sizing:border-box}:root{--cream:#F5FBE6;--teal-dark:#215E61;--navy:#233D4D;--orange:#FE7F2D;--orange-light:#ff9b5a;--white:#ffffff;--navy-dark:#1a2f36}body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:var(--white);color:var(--navy);overflow-x:hidden;padding-top:100px}.content-section-server{position:relative;text-align:center;top:50%;z-index:1}.contact-btn{background:var(--orange);color:var(--white);padding:10px 25px;border-radius:5px;border:none;cursor:pointer;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;transition:all .3s}.contact-btn:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(57,57,57,.4)}.contact-btn-container{display:flex;justify-content:center;align-items:center;margin-top:60px}.services-contact-btn-container{display:flex;justify-content:center;align-items:center;margin:30px 0}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cream: #F5FBE6;
+    --teal-dark: #215E61;
+    --navy: #233D4D;
+    --orange: #FE7F2D;
+    --orange-light: #ff9b5a;
+    --white: #ffffff;
+    --navy-dark: #1a2f36;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--white);
+    color: var(--navy);
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+
+
+
+.content-section-server {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    z-index: 1;
+}
+
+.contact-btn {
+    background: var(--orange);
+    color: var(--white);
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(57, 57, 57, 0.4);
+}
+
+.contact-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.services-contact-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}

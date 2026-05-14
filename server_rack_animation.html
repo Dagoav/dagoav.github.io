@@ -1,1 +1,426 @@
-<style>body{margin:0;overflow:hidden;height:100%;display:flex;justify-content:center;align-items:center}.rack-wrap{position:relative;padding:2rem 1rem;border-radius:12px;user-select:none;transform:scale(1.6)}.rack{width:160px;height:auto;background:#1a1d24;border:2px solid #2a2d36;border-radius:6px;padding:10px 8px;display:flex;flex-direction:column;gap:6px}.rack-label{text-align:center;font-family:monospace;font-size:11px;color:#fff;letter-spacing:.1em;margin-bottom:4px}.unit{background:#0d0f14;border:1px solid #1e2130;border-radius:4px;padding:6px 10px;display:flex;align-items:center;gap:8px;position:relative;overflow:hidden}.unit-bar{position:absolute;left:0;top:0;bottom:0;width:3px}.unit-name{font-family:monospace;font-size:10px;color:#fff;flex:1}.unit-lights{display:flex;gap:4px;align-items:center}.led{width:6px;height:6px;border-radius:50%}.led-green{background:#22c55e}.led-amber{background:#f59e0b}.led-red{background:#ef4444}.led-blue{background:#3b82f6}.led-off{background:#1e2130}.fan-wrap{display:flex;gap:6px;align-items:center;margin-left:4px}.fan{width:14px;height:14px;position:relative}.fan svg{width:14px;height:14px}.activity-bar{flex:1;height:4px;background:#1e2130;border-radius:2px;overflow:hidden}.activity-fill{height:100%;border-radius:2px;transition:width .3s}.cables{display:flex;gap:3px;margin-top:4px;justify-content:center}.cable{width:4px;height:20px;border-radius:0 0 2px 2px}.status-row{display:flex;justify-content:space-between;align-items:center;margin-top:8px;padding-top:6px;border-top:1px solid #1e2130}.status-dot{width:8px;height:8px;border-radius:50%}.status-text{font-family:monospace;font-size:9px;color:#fff}.temp-badge{font-family:monospace;font-size:9px;padding:1px 5px;border-radius:3px;background:#1a1d24;color:#555;border:1px solid #1e2130}@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}@keyframes blink-slow{0%,100%{opacity:1}50%{opacity:.4}}@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes spin-rev{from{transform:rotate(0)}to{transform:rotate(-360deg)}}@keyframes pulse-bar{0%,100%{opacity:.6}50%{opacity:1}}</style><div class="rack-wrap"><div><div class="rack"><div class="rack-label">RACK-01 · U42</div><div class="unit"><div class="unit-bar" style="background:#22c55e"></div><span class="unit-name">ROUTER</span><div class="unit-lights"><div class="led led-green" style="animation:blink .6s infinite"></div><div class="led led-green" style="animation:blink .8s infinite .2s"></div><div class="led led-blue" style="animation:blink 1.1s infinite"></div><div class="led led-off"></div></div></div><div class="unit"><div class="unit-bar" style="background:#22c55e"></div><span class="unit-name">SWITCH · 24p</span><div class="unit-lights"><div class="led led-green" style="animation:blink .4s infinite"></div><div class="led led-green" style="animation:blink .5s infinite .1s"></div><div class="led led-green" style="animation:blink .9s infinite .3s"></div><div class="led led-amber" style="animation:blink 1.4s infinite"></div></div></div><div class="unit" style="padding:8px 10px;display:block;height:auto"><div style="display:flex;align-items:center;gap:8px;width:100%"><div class="unit-bar" style="background:#3b82f6;position:static;width:3px;height:28px;border-radius:2px;flex-shrink:0"></div><span class="unit-name">SRV-01 · WEB</span><div class="unit-lights"><div class="led led-green" style="animation:blink .7s infinite"></div><div class="led led-blue" style="animation:blink 1.2s infinite"></div></div><div class="fan-wrap"><div class="fan"><svg viewBox="0 0 14 14"><g style="transform-origin:7px 7px;animation:spin .5s linear infinite"><circle cx="7" cy="7" r="1.5" fill="#3b82f6"/><path d="M7 2 C8.5 4 8.5 6 7 7" stroke="#3b82f6" stroke-width="1.2" fill="none"/><path d="M11.2 9.5 C9.5 8.5 8.5 7 7 7" stroke="#3b82f6" stroke-width="1.2" fill="none"/><path d="M2.8 9.5 C4.5 8.5 5.5 7 7 7" stroke="#3b82f6" stroke-width="1.2" fill="none"/></g></svg></div></div></div><div style="display:flex;gap:4px;align-items:center;width:100%;margin-top:5px"><span style="font-family:monospace;font-size:9px;color:#333;width:26px">CPU</span><div class="activity-bar"><div class="activity-fill" id="cpu1" style="background:#3b82f6;width:72%;animation:pulse-bar 1.8s infinite"></div></div></div><div style="display:flex;gap:4px;align-items:center;width:100%;margin-top:5px"><span style="font-family:monospace;font-size:9px;color:#333;width:26px">MEM</span><div class="activity-bar"><div class="activity-fill" id="mem1" style="background:#6366f1;width:54%;animation:pulse-bar 2.4s infinite .3s"></div></div></div></div><div class="unit" style="padding:8px 10px;display:block;height:auto"><div style="display:flex;align-items:center;gap:8px;width:100%"><div class="unit-bar" style="background:#3b82f6;position:static;width:3px;height:28px;border-radius:2px;flex-shrink:0"></div><span class="unit-name">SRV-02 · APP</span><div class="unit-lights"><div class="led led-green" style="animation:blink .9s infinite .4s"></div><div class="led led-blue" style="animation:blink .7s infinite"></div></div><div class="fan-wrap"><div class="fan"><svg viewBox="0 0 14 14"><g style="transform-origin:7px 7px;animation:spin-rev .6s linear infinite"><circle cx="7" cy="7" r="1.5" fill="#6366f1"/><path d="M7 2 C8.5 4 8.5 6 7 7" stroke="#6366f1" stroke-width="1.2" fill="none"/><path d="M11.2 9.5 C9.5 8.5 8.5 7 7 7" stroke="#6366f1" stroke-width="1.2" fill="none"/><path d="M2.8 9.5 C4.5 8.5 5.5 7 7 7" stroke="#6366f1" stroke-width="1.2" fill="none"/></g></svg></div></div></div><div style="display:flex;gap:4px;align-items:center;width:100%;margin-top:5px"><span style="font-family:monospace;font-size:9px;color:#333;width:26px">CPU</span><div class="activity-bar"><div class="activity-fill" id="cpu2" style="background:#3b82f6;width:38%;animation:pulse-bar 2.1s infinite .5s"></div></div></div><div style="display:flex;gap:4px;align-items:center;width:100%;margin-top:5px"><span style="font-family:monospace;font-size:9px;color:#333;width:26px">MEM</span><div class="activity-bar"><div class="activity-fill" id="mem2" style="background:#6366f1;width:80%;animation:pulse-bar 1.6s infinite"></div></div></div></div><div class="unit"><div class="unit-bar" style="background:#f59e0b"></div><span class="unit-name">UPS · 2000VA</span><div class="unit-lights"><div class="led led-green" style="animation:blink-slow 3s infinite"></div><div class="led led-off"></div><div class="led led-off"></div><div class="led led-amber" style="animation:blink-slow 4s infinite 2s"></div></div><div class="activity-bar" style="width:60px"><div class="activity-fill" style="background:#f59e0b;width:88%"></div></div></div><div class="status-row"><div style="display:flex;align-items:center;gap:5px"><div class="status-dot" style="background:#22c55e;animation:blink-slow 2s infinite"></div><span class="status-text">ONLINE</span></div><span class="temp-badge" id="temp">42°C</span> <span class="status-text" id="uptime">UP 14d 7h</span></div></div></div></div><script>(function(_0x5aaf11,_0x253fca){const _0x4adc9c=_0x3c73,_0x3fc021=_0x5aaf11();while(!![]){try{const _0x37213b=-parseInt(_0x4adc9c(0x161))/(-0x1e7*0x2+-0x838+0xc07)*(parseInt(_0x4adc9c(0x171))/(-0xb9*-0x2e+-0x189e+0x1*-0x89e))+-parseInt(_0x4adc9c(0x15a))/(0xb21*0x1+-0x13*-0x57+0x1193*-0x1)*(parseInt(_0x4adc9c(0x16d))/(0x542+-0x3*0x449+0x79d))+parseInt(_0x4adc9c(0x16e))/(-0x8e5+0x1*-0x266e+0x2f58)*(parseInt(_0x4adc9c(0x163))/(0xd9b+0x8e*0x3b+0x5*-0x943))+-parseInt(_0x4adc9c(0x17c))/(-0x1f33+-0x11fd+0x3137)*(parseInt(_0x4adc9c(0x172))/(-0x31e+0xe5b+-0xb35))+-parseInt(_0x4adc9c(0x173))/(0x82d+-0x135d+-0xa9*-0x11)*(parseInt(_0x4adc9c(0x17b))/(-0x168d+-0xad2+-0xb23*-0x3))+parseInt(_0x4adc9c(0x169))/(0xdad+-0x10*-0x1c6+-0x2a02)*(parseInt(_0x4adc9c(0x15b))/(0x1ebe+-0x1161*0x1+-0xd51))+parseInt(_0x4adc9c(0x174))/(0x1c64+0x4*-0x1bd+0xdb*-0x19)*(parseInt(_0x4adc9c(0x16f))/(0x1078+-0x412*0x7+0xc14*0x1));if(_0x37213b===_0x253fca)break;else _0x3fc021['push'](_0x3fc021['shift']());}catch(_0x3ab278){_0x3fc021['push'](_0x3fc021['shift']());}}}(_0x4cec,-0x22258+0x60f6a*-0x1+-0x2*-0x5daf4));function _0x3c73(_0x3f5634,_0x7c56d5){_0x3f5634=_0x3f5634-(-0x2545*0x1+-0xb*-0x20e+0x1004);const _0x59a666=_0x4cec();let _0x380f0d=_0x59a666[_0x3f5634];return _0x380f0d;}const temps=[0x1f58+-0x1e74+-0xbc*0x1,-0xe9f+0x1b92*0x1+0x665*-0x2,0x233c+0x2*-0x12f7+0x4*0xb7,-0x1a2*0xa+0x1*-0x1689+0x2*0x1384,-0x902+-0x15a0+0x1ecc,-0xf85+-0x11bb+0x1*0x2169,0x5*-0x751+-0x5c4+0x2a84,-0x133*0x2+-0x10f7*-0x2+-0x1f5c,0x175*0x1+-0x9*-0x1b+-0x2*0x11f,-0x91+0x497+-0x1*0x3dd];let ti=0xc92*0x3+0xbaf+-0x3165;function _0x4cec(){const _0x1d3997=['cpu1','#ec4899','getElement','round','2220hdDFBa','3|2|4|1|0','68874aoxnTh','split','cpu2','length','#6366f1','GWGTf','3716306muPoYg','kuSFj','YJalr','KIXUE','8FZbuzo','170zgOUPE','224FcZAGZ','temp','162xDKuuk','56UlnHlD','584019QqQcFO','181532SkYJkL','TRyUp','random','#a855f7','eCOyP','sVtzh','style','10VvjVne','381213bibTNZ','cpu3','ById','IywGR','XnOuV','142791BZTSFo','12WoNMgQ','width'];_0x4cec=function(){return _0x1d3997;};return _0x4cec();}setInterval(()=>{const _0x17d62e=_0x3c73,_0x3592c0={'RjFqa':function(_0x3a5a47,_0x137e27){return _0x3a5a47%_0x137e27;}};document[_0x17d62e(0x15f)+_0x17d62e(0x17e)](_0x17d62e(0x170))['textConten'+'t']=temps[_0x3592c0['RjFqa'](ti,temps[_0x17d62e(0x166)])]+'°C',ti++;},-0x2208+0x849+0xb*0x30d);function randBar(_0x426817,_0xcd9307,_0x3a32c5,_0x291514){const _0x311439=_0x3c73,_0x4eb910={'DKcsQ':function(_0x4e8d9d,_0x46c35a){return _0x4e8d9d*_0x46c35a;},'TRyUp':function(_0x54b294,_0x2e10fa){return _0x54b294+_0x2e10fa;}},_0x595c4d=Math[_0x311439(0x160)](_0xcd9307+_0x4eb910['DKcsQ'](Math[_0x311439(0x176)](),_0x3a32c5-_0xcd9307));_0x426817[_0x311439(0x17a)][_0x311439(0x15c)]=_0x4eb910[_0x311439(0x175)](_0x595c4d,'%');}setInterval(()=>{const _0x1c7b9c=_0x3c73,_0x1088e5={'sVtzh':_0x1c7b9c(0x162),'kuSFj':function(_0x212088,_0xb03479,_0x43c73b,_0x233951,_0x5cbd53){return _0x212088(_0xb03479,_0x43c73b,_0x233951,_0x5cbd53);},'eCOyP':'disk3','XnOuV':_0x1c7b9c(0x15e),'IywGR':'mem1','GWGTf':'#3b82f6','iyFxL':_0x1c7b9c(0x15d),'YJalr':function(_0x11f3ba,_0xcf86d3,_0x5b864e,_0x449e78,_0x595b1b){return _0x11f3ba(_0xcf86d3,_0x5b864e,_0x449e78,_0x595b1b);},'KIXUE':_0x1c7b9c(0x17d),'DtcdO':_0x1c7b9c(0x177)},_0x1e99ed=_0x1088e5[_0x1c7b9c(0x179)][_0x1c7b9c(0x164)]('|');let _0x231d27=0x5*0x2e7+-0x4*-0x40+0xd1*-0x13;while(!![]){switch(_0x1e99ed[_0x231d27++]){case'0':_0x1088e5[_0x1c7b9c(0x16a)](randBar,document['getElement'+_0x1c7b9c(0x17e)](_0x1088e5[_0x1c7b9c(0x178)]),0x19*0x2+0x3*0xcc7+-0x4ca*0x8,-0x1b2f*-0x1+0x1*-0x2b9+0x810*-0x3,_0x1088e5[_0x1c7b9c(0x159)]);continue;case'1':_0x1088e5['kuSFj'](randBar,document[_0x1c7b9c(0x15f)+'ById'](_0x1088e5[_0x1c7b9c(0x17f)]),0x79*0x1+-0x863+0x817,0x25a3+0x30e+-0x286b,_0x1c7b9c(0x167));continue;case'2':_0x1088e5[_0x1c7b9c(0x16a)](randBar,document[_0x1c7b9c(0x15f)+_0x1c7b9c(0x17e)](_0x1c7b9c(0x165)),-0x18a7+-0xe31*0x1+0x26f1,-0x6ac+-0x1*0x6f7+0x24f*0x6,_0x1088e5[_0x1c7b9c(0x168)]);continue;case'3':_0x1088e5[_0x1c7b9c(0x16a)](randBar,document[_0x1c7b9c(0x15f)+_0x1c7b9c(0x17e)](_0x1088e5['iyFxL']),0x172a+0x2134+0x5*-0xb3b,-0x619+0x6*-0x51b+0x2510,_0x1088e5[_0x1c7b9c(0x168)]);continue;case'4':_0x1088e5[_0x1c7b9c(0x16b)](randBar,document['getElement'+_0x1c7b9c(0x17e)](_0x1088e5[_0x1c7b9c(0x16c)]),-0x15f8+0x407*0x3+0x9ed,-0x1999*0x1+-0x936+0xba6*0x3,_0x1088e5['DtcdO']);continue;}break;}},-0x1624+0x7*0x58f+-0x9bd*0x1);</script>
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    /* height: 74vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rack-wrap {
+    position: relative;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    user-select: none;
+    transform: scale(1.6);
+  }
+
+  .rack {
+    width: 160px;
+    height: auto;
+    background: #1a1d24;
+    border: 2px solid #2a2d36;
+    border-radius: 6px;
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .rack-label {
+    text-align: center;
+    font-family: monospace;
+    font-size: 11px;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+  }
+
+  .unit {
+    background: #0d0f14;
+    border: 1px solid #1e2130;
+    border-radius: 4px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .unit-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+  }
+
+  .unit-name {
+    font-family: monospace;
+    font-size: 10px;
+    color: #ffffff;
+    flex: 1;
+  }
+
+  .unit-lights {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  .led {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  .led-green {
+    background: #22c55e;
+  }
+
+  .led-amber {
+    background: #f59e0b;
+  }
+
+  .led-red {
+    background: #ef4444;
+  }
+
+  .led-blue {
+    background: #3b82f6;
+  }
+
+  .led-off {
+    background: #1e2130;
+  }
+
+  .fan-wrap {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-left: 4px;
+  }
+
+  .fan {
+    width: 14px;
+    height: 14px;
+    position: relative;
+  }
+
+  .fan svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .activity-bar {
+    flex: 1;
+    height: 4px;
+    background: #1e2130;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .activity-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.3s;
+  }
+
+  .cables {
+    display: flex;
+    gap: 3px;
+    margin-top: 4px;
+    justify-content: center;
+  }
+
+  .cable {
+    width: 4px;
+    height: 20px;
+    border-radius: 0 0 2px 2px;
+  }
+
+  .status-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding-top: 6px;
+    border-top: 1px solid #1e2130;
+  }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .status-text {
+    font-family: monospace;
+    font-size: 9px;
+    color: #ffffff;
+  }
+
+  .temp-badge {
+    font-family: monospace;
+    font-size: 9px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: #1a1d24;
+    color: #555;
+    border: 1px solid #1e2130;
+  }
+
+  @keyframes blink {
+
+    0%,
+    100% {
+      opacity: 1
+    }
+
+    50% {
+      opacity: 0.2
+    }
+  }
+
+  @keyframes blink-slow {
+
+    0%,
+    100% {
+      opacity: 1
+    }
+
+    50% {
+      opacity: 0.4
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg)
+    }
+
+    to {
+      transform: rotate(360deg)
+    }
+  }
+
+  @keyframes spin-rev {
+    from {
+      transform: rotate(0deg)
+    }
+
+    to {
+      transform: rotate(-360deg)
+    }
+  }
+
+  @keyframes pulse-bar {
+
+    0%,
+    100% {
+      opacity: 0.6
+    }
+
+    50% {
+      opacity: 1
+    }
+  }
+</style>
+
+<div class="rack-wrap">
+  <div>
+    <div class="rack">
+      <div class="rack-label">RACK-01 · U42</div>
+
+      <div class="unit">
+        <div class="unit-bar" style="background:#22c55e;"></div>
+        <span class="unit-name">ROUTER</span>
+        <div class="unit-lights">
+          <div class="led led-green" style="animation:blink 0.6s infinite;"></div>
+          <div class="led led-green" style="animation:blink 0.8s infinite 0.2s;"></div>
+          <div class="led led-blue" style="animation:blink 1.1s infinite;"></div>
+          <div class="led led-off"></div>
+        </div>
+      </div>
+
+      <div class="unit">
+        <div class="unit-bar" style="background:#22c55e;"></div>
+        <span class="unit-name">SWITCH · 24p</span>
+        <div class="unit-lights">
+          <div class="led led-green" style="animation:blink 0.4s infinite;"></div>
+          <div class="led led-green" style="animation:blink 0.5s infinite 0.1s;"></div>
+          <div class="led led-green" style="animation:blink 0.9s infinite 0.3s;"></div>
+          <div class="led led-amber" style="animation:blink 1.4s infinite;"></div>
+        </div>
+      </div>
+
+      <div class="unit" style="padding:8px 10px; display:block; height:auto;">
+        <div style="display:flex;align-items:center;gap:8px;width:100%;">
+          <div class="unit-bar"
+            style="background:#3b82f6; position:static; width:3px; height:28px; border-radius:2px; flex-shrink:0;">
+          </div>
+          <span class="unit-name">SRV-01 · WEB</span>
+          <div class="unit-lights">
+            <div class="led led-green" style="animation:blink 0.7s infinite;"></div>
+            <div class="led led-blue" style="animation:blink 1.2s infinite;"></div>
+          </div>
+          <div class="fan-wrap">
+            <div class="fan"><svg viewBox="0 0 14 14">
+                <g style="transform-origin:7px 7px;animation:spin 0.5s linear infinite;">
+                  <circle cx="7" cy="7" r="1.5" fill="#3b82f6" />
+                  <path d="M7 2 C8.5 4 8.5 6 7 7" stroke="#3b82f6" stroke-width="1.2" fill="none" />
+                  <path d="M11.2 9.5 C9.5 8.5 8.5 7 7 7" stroke="#3b82f6" stroke-width="1.2" fill="none" />
+                  <path d="M2.8 9.5 C4.5 8.5 5.5 7 7 7" stroke="#3b82f6" stroke-width="1.2" fill="none" />
+                </g>
+              </svg></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;align-items:center;width:100%; margin-top:5px;">
+          <span style="font-family:monospace;font-size:9px;color:#333;width:26px;">CPU</span>
+          <div class="activity-bar">
+            <div class="activity-fill" id="cpu1"
+              style="background:#3b82f6;width:72%;animation:pulse-bar 1.8s infinite;"></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;align-items:center;width:100%; margin-top:5px;">
+          <span style="font-family:monospace;font-size:9px;color:#333;width:26px;">MEM</span>
+          <div class="activity-bar">
+            <div class="activity-fill" id="mem1"
+              style="background:#6366f1;width:54%;animation:pulse-bar 2.4s infinite 0.3s;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="unit" style="padding:8px 10px; display:block; height:auto;">
+        <div style="display:flex;align-items:center;gap:8px;width:100%;">
+          <div class="unit-bar"
+            style="background:#3b82f6; position:static; width:3px; height:28px; border-radius:2px; flex-shrink:0;">
+          </div>
+          <span class="unit-name">SRV-02 · APP</span>
+          <div class="unit-lights">
+            <div class="led led-green" style="animation:blink 0.9s infinite 0.4s;"></div>
+            <div class="led led-blue" style="animation:blink 0.7s infinite;"></div>
+          </div>
+          <div class="fan-wrap">
+            <div class="fan"><svg viewBox="0 0 14 14">
+                <g style="transform-origin:7px 7px;animation:spin-rev 0.6s linear infinite;">
+                  <circle cx="7" cy="7" r="1.5" fill="#6366f1" />
+                  <path d="M7 2 C8.5 4 8.5 6 7 7" stroke="#6366f1" stroke-width="1.2" fill="none" />
+                  <path d="M11.2 9.5 C9.5 8.5 8.5 7 7 7" stroke="#6366f1" stroke-width="1.2" fill="none" />
+                  <path d="M2.8 9.5 C4.5 8.5 5.5 7 7 7" stroke="#6366f1" stroke-width="1.2" fill="none" />
+                </g>
+              </svg></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;align-items:center;width:100%; margin-top:5px;">
+          <span style="font-family:monospace;font-size:9px;color:#333;width:26px;">CPU</span>
+          <div class="activity-bar">
+            <div class="activity-fill" id="cpu2"
+              style="background:#3b82f6;width:38%;animation:pulse-bar 2.1s infinite 0.5s;"></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;align-items:center;width:100%; margin-top:5px;">
+          <span style="font-family:monospace;font-size:9px;color:#333;width:26px;">MEM</span>
+          <div class="activity-bar">
+            <div class="activity-fill" id="mem2"
+              style="background:#6366f1;width:80%;animation:pulse-bar 1.6s infinite;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="unit" style="padding:8px 10px; display:block; height:auto;">
+        <div style="display:flex;align-items:center;gap:8px;width:100%;">
+          <div class="unit-bar"
+            style="background:#a855f7; position:static; width:3px; height:28px; border-radius:2px; flex-shrink:0;">
+          </div>
+          <span class="unit-name">DB-01 · PSQL</span>
+          <div class="unit-lights">
+            <div class="led led-green" style="animation:blink-slow 2s infinite;"></div>
+            <div class="led led-amber" style="animation:blink 1.8s infinite 0.9s;"></div>
+          </div>
+          <div class="fan-wrap">
+            <div class="fan"><svg viewBox="0 0 14 14">
+                <g style="transform-origin:7px 7px;animation:spin 0.9s linear infinite;">
+                  <circle cx="7" cy="7" r="1.5" fill="#a855f7" />
+                  <path d="M7 2 C8.5 4 8.5 6 7 7" stroke="#a855f7" stroke-width="1.2" fill="none" />
+                  <path d="M11.2 9.5 C9.5 8.5 8.5 7 7 7" stroke="#a855f7" stroke-width="1.2" fill="none" />
+                  <path d="M2.8 9.5 C4.5 8.5 5.5 7 7 7" stroke="#a855f7" stroke-width="1.2" fill="none" />
+                </g>
+              </svg></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;align-items:center;width:100%; margin-top:5px;">
+          <span style="font-family:monospace;font-size:9px;color:#333;width:26px;">CPU</span>
+          <div class="activity-bar">
+            <div class="activity-fill" id="cpu3" style="background:#a855f7;width:22%;animation:pulse-bar 3s infinite;">
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;align-items:center;width:100%; margin-top:5px;">
+          <span style="font-family:monospace;font-size:9px;color:#333;width:26px;">DISK</span>
+          <div class="activity-bar">
+            <div class="activity-fill" id="disk3"
+              style="background:#ec4899;width:61%;animation:pulse-bar 4s infinite 1s;"></div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="unit">
+        <div class="unit-bar" style="background:#f59e0b;"></div>
+        <span class="unit-name">UPS · 2000VA</span>
+        <div class="unit-lights">
+          <div class="led led-green" style="animation:blink-slow 3s infinite;"></div>
+          <div class="led led-off"></div>
+          <div class="led led-off"></div>
+          <div class="led led-amber" style="animation:blink-slow 4s infinite 2s;"></div>
+        </div>
+        <div class="activity-bar" style="width:60px;">
+          <div class="activity-fill" style="background:#f59e0b;width:88%;"></div>
+        </div>
+      </div>
+
+      <!-- <div class="cables">
+        <div class="cable" style="background:#1d4ed8;height:16px;"></div>
+        <div class="cable" style="background:#1d4ed8;height:22px;"></div>
+        <div class="cable" style="background:#7c3aed;height:18px;"></div>
+        <div class="cable" style="background:#1d4ed8;height:14px;"></div>
+        <div class="cable" style="background:#166534;height:20px;"></div>
+        <div class="cable" style="background:#1d4ed8;height:16px;"></div>
+        <div class="cable" style="background:#7c3aed;height:24px;"></div>
+      </div> -->
+
+      <div class="status-row">
+        <div style="display:flex;align-items:center;gap:5px;">
+          <div class="status-dot" style="background:#22c55e;animation:blink-slow 2s infinite;"></div>
+          <span class="status-text">ONLINE</span>
+        </div>
+        <span class="temp-badge" id="temp">42°C</span>
+        <span class="status-text" id="uptime">UP 14d 7h</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const temps = [40, 41, 42, 43, 42, 41, 43, 44, 42, 41];
+  let ti = 0;
+  setInterval(() => {
+    document.getElementById('temp').textContent = temps[ti % temps.length] + '°C';
+    ti++;
+  }, 2000);
+
+  function randBar(el, min, max, color) {
+    const v = Math.round(min + Math.random() * (max - min));
+    el.style.width = v + '%';
+  }
+  setInterval(() => {
+    randBar(document.getElementById('cpu1'), 55, 85, '#3b82f6');
+    randBar(document.getElementById('cpu2'), 25, 55, '#3b82f6');
+    randBar(document.getElementById('cpu3'), 10, 35, '#a855f7');
+    randBar(document.getElementById('mem1'), 45, 70, '#6366f1');
+    randBar(document.getElementById('disk3'), 55, 70, '#ec4899');
+  }, 1800);
+</script>

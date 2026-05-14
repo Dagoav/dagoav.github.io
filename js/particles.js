@@ -1,1 +1,58 @@
-function _0x1300(){var _0x28255b=['485526sjAPMy','106859eKaksL','canvas','753675ABkGgp','7bUvDfO','bubble','2HTQQSh','push','10CoOKdH','out','1222164RBrlkA','particles-','circle','692176RMDKel','2684277YeCJpr','#233D4D','2053052oVhpvx','none'];_0x1300=function(){return _0x28255b;};return _0x1300();}function _0x4506(_0x1b178b,_0x4e5006){_0x1b178b=_0x1b178b-(0x763+0x2fe*0xa+-0x3b*0x9a);var _0xeba208=_0x1300();var _0x4e1b08=_0xeba208[_0x1b178b];return _0x4e1b08;}var _0x4b8d14=_0x4506;(function(_0xd0b8a1,_0x176fd0){var _0x2d855b=_0x4506,_0x1f7621=_0xd0b8a1();while(!![]){try{var _0x2d6c27=parseInt(_0x2d855b(0x1d8))/(-0x2*0x1d9+0x18f+-0x89*-0x4)*(-parseInt(_0x2d855b(0x1dd))/(-0x3e4*-0x1+0x77b+-0xb5d))+-parseInt(_0x2d855b(0x1e1))/(-0x185b+0x24f0+-0xc92)+parseInt(_0x2d855b(0x1d5))/(-0x215+0x1d32+0x7*-0x3df)+parseInt(_0x2d855b(0x1da))/(0x1f4b*0x1+-0x5e3+-0x1963)+-parseInt(_0x2d855b(0x1d7))/(0x694+-0x3c4*-0x3+-0x11da)+-parseInt(_0x2d855b(0x1db))/(-0x244b+0x1afd+0x1*0x955)*(parseInt(_0x2d855b(0x1d2))/(0x1*-0x1c41+-0x1*0x18f5+-0x2*-0x1a9f))+-parseInt(_0x2d855b(0x1d3))/(0x15*-0x137+0x21f3+0x1*-0x867)*(-parseInt(_0x2d855b(0x1df))/(-0x3ce+0x2*-0x4be+0x2*0x6aa));if(_0x2d6c27===_0x176fd0)break;else _0x1f7621['push'](_0x1f7621['shift']());}catch(_0x16aebb){_0x1f7621['push'](_0x1f7621['shift']());}}}(_0x1300,0x36d9*0xf+-0x38990+0x49aca),particlesJS(_0x4b8d14(0x1e2)+'js',{'particles':{'number':{'value':0x50,'density':{'enable':!(0x18ec+-0x1*-0xc6a+-0x2*0x12ab),'value_area':0x320}},'color':{'value':_0x4b8d14(0x1d4)},'shape':{'type':_0x4b8d14(0x1d1)},'opacity':{'value':0.4,'random':!(-0xaa9*0x1+-0x1f9a+0x1*0x2a44)},'size':{'value':0x5,'random':!(-0x1244+0x178e+-0x1*0x54a)},'line_linked':{'enable':!(0x1a0e+-0x16a*0xc+-0x916),'distance':0x96,'color':_0x4b8d14(0x1d4),'opacity':0.6,'width':0x1},'move':{'enable':!(0xdf3+0x3*0x311+0xb93*-0x2),'speed':0x3,'direction':_0x4b8d14(0x1d6),'out_mode':_0x4b8d14(0x1e0)}},'interactivity':{'detect_on':_0x4b8d14(0x1d9),'events':{'onhover':{'enable':!(-0x1*-0x1707+-0x2421*-0x1+-0x3b28),'mode':_0x4b8d14(0x1dc)},'onclick':{'enable':!(-0x2f0*0x1+-0x1*0x2383+0x2673),'mode':_0x4b8d14(0x1de)}},'modes':{'bubble':{'distance':0xc8,'size':0x8,'duration':0x2,'opacity':0x1,'speed':0x3},'push':{'particles_nb':0x4}}},'retina_detect':!(0x3*0x6bb+0xc1a+-0x204b)}));
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": { "enable": true, "value_area": 800 }
+    },
+    "color": { "value": "#233D4D" },
+    "shape": { "type": "circle" },
+    "opacity": {
+      "value": 0.4, // Súbelo un poco para verlas, o déjalo en 0 si quieres que aparezcan de la nada
+      "random": false
+    },
+    "size": {
+      "value": 5,
+      "random": true
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#233D4D",
+      "opacity": 0.6,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 3,
+      "direction": "none",
+      "out_mode": "out"
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble" // Aquí activas el modo
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      }
+    },
+    /* --- ESTA ES LA PARTE QUE TE FALTABA --- */
+    "modes": {
+      "bubble": {
+        "distance": 200,    // A qué distancia del mouse reaccionan
+        "size": 8,         // Qué tan grandes se vuelven
+        "duration": 2,      // Cuánto dura el efecto
+        "opacity": 1,       // ¡IMPORTANTE! Si tu opacidad base era 0, aquí debes ponerla en 1
+        "speed": 3
+      },
+      "push": {
+        "particles_nb": 4
+      }
+    }
+  },
+  "retina_detect": true
+});

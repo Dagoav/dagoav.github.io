@@ -1,1 +1,165 @@
-.navbar{height:80px;display:flex;background-color:#fff;transition:all .3s ease;box-shadow:0 3px 8px rgba(213,213,213,.112);padding:10px 2rem;justify-content:space-between;align-items:center;border-radius:16px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);cursor:pointer;position:fixed;left:0;right:0;width:auto;top:40px;z-index:1000}.navbar.scrolled{background-color:transparent;background:rgba(255,255,255,.45);backdrop-filter:blur(8px);margin:0 40px;top:10px}.logo-container{display:flex;align-items:center;gap:15px}.logo-img{width:auto;height:70px;cursor:pointer;transition:transform .3s ease}.logo-text{display:flex;flex-direction:column}.logo-text .brand{font-size:24px;font-weight:700;color:var(--teal-dark);letter-spacing:2px}.logo-text .tagline{font-size:14px;color:var(--teal-dark);opacity:.8;letter-spacing:1px}.navbar.scrolled .logo-text .brand,.navbar.scrolled .logo-text .tagline{color:var(--cream)}.nav-menu-container{display:flex;align-items:center;gap:20px}.nav-menu{display:flex;list-style:none;gap:35px;align-items:center}.nav-menu a{color:var(--navy);text-decoration:none;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;transition:color .3s;position:relative}.nav-menu a.scrolled-hero{color:var(--white)}.nav-menu a::after{content:'';position:absolute;bottom:-5px;left:0;width:0;height:3px;background:var(--navy-dark);transition:width .3s}.nav-menu a:hover::after{width:100%}.nav-menu a:hover{color:var(--navy-dark)}.mobile-menu-btn{display:none;background:0 0;border:none;color:var(--cream);font-size:24px;cursor:pointer}@media (max-width:968px){.navbar{flex-direction:column;margin-bottom:30px}.nav-menu{color:var(--navy);display:none;margin:10px 1rem}.contact-btn-navbar{display:none;box-shadow:none}}@media (max-width:480px){.logo-img{height:40px}.logo-text .brand{font-size:18px}.logo-text .tagline{font-size:9px}}
+/* Navbar */
+.navbar {
+  height: 80px;
+  display: flex;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0px 3px 8px rgba(213, 213, 213, 0.112);
+  padding: 10px 2rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  /* margin: 40px 40px; */
+  backdrop-filter: blur(4px);
+  /* soporte para Safari */
+  -webkit-backdrop-filter: blur(4px);
+
+  cursor: pointer;
+
+  /* Se queda fijo en todo momento */
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: auto;
+  top: 40px;
+  /* Para que no lo tapen otros elementos */
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: transparent;
+  /* background: rgba(112, 111, 111, 0.442); */
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  margin: 0px 40px;
+  top: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: auto;
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text .brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--teal-dark);
+  letter-spacing: 2px;
+}
+
+.logo-text .tagline {
+  font-size: 14px;
+  color: var(--teal-dark);
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.navbar.scrolled .logo-text .brand,
+.navbar.scrolled .logo-text .tagline {
+  color: var(--cream);
+}
+
+.nav-menu-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  align-items: center;
+}
+
+.nav-menu a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-menu a.scrolled-hero {
+  color: var(--white);
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--navy-dark);
+  transition: width 0.3s;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+.nav-menu a:hover {
+  color: var(--navy-dark);
+}
+
+
+/* Mobile Menu */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--cream);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 968px) {
+  .navbar {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .nav-menu {
+    color: var(--navy);
+    display: none;
+    margin: 10px 1rem;
+  }
+
+  .contact-btn-navbar {
+    display: none;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .logo-img {
+    height: 40px;
+  }
+
+  .logo-text .brand {
+    font-size: 18px;
+  }
+
+  .logo-text .tagline {
+    font-size: 9px;
+  }
+}

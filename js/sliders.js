@@ -1,1 +1,130 @@
-function _0x339a(){const _0x1a47bb=['\x20\x20\x20\x20\x20</div','tent-servi','gination','\x0a\x20\x20\x20\x20\x20\x20<di','wiper-slid','tton-next','lide.','\x20muted\x20loo','</video>\x0a\x20','centHTML','obre\x20el\x20vi','text','ine>\x0a\x20\x20\x20\x20\x20','</p>\x0a\x20\x20\x20\x20\x20','\x20\x20\x20<h1>','videoSrc','insertAdja','\x22\x20type=\x22vi','getElement','Tercer\x20Sli','ss=\x22backgr','\x20tercer\x20sl','959714tezHJZ','deo.','wrapper\x22>\x0a','¡Bienvenid','slide','.mp4','\x20\x20\x20\x20\x20\x20\x20\x20\x20<','.slide-con','title','ogan-video','1865328WAWyGz','Move','Rofbb','.swiper-bu','1305DnjyOR','\x22content\x22>','\x20segundo\x20s','\x20\x20\x20\x20\x20\x20\x20<so','8411116wzusOy','\x20\x20\x20</div>\x0a','\x20texto\x20del','tent','6465020wkwTTg','6pLbcdQ','1037387IbkPGn','Este\x20texto','<video\x20cla','ide.','v\x20class=\x22s','wrapper','urce\x20src=\x22','beforeend','\x22\x20autoplay','io!','\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','target','.hero-swip','47888ouZavV','p\x20playsinl','deo/mp4\x22>\x0a','allowTouch','closest','div\x20class=','MhEbR','Este\x20es\x20el','tton-prev','</div>\x0a\x20\x20\x20','forEach','5099562gHoCcO','ide','\x20\x20<div\x20cla','ound-video'];_0x339a=function(){return _0x1a47bb;};return _0x339a();}const _0x23d2e7=_0x4b12;function _0x4b12(_0x55c74c,_0x41b5ed){_0x55c74c=_0x55c74c-(0x92*-0x37+-0x3*0x41d+0x2cee);const _0x529e06=_0x339a();let _0x37c1fe=_0x529e06[_0x55c74c];return _0x37c1fe;}(function(_0x895ad0,_0x17b901){const _0x2b7b2d=_0x4b12,_0x6089a3=_0x895ad0();while(!![]){try{const _0x42f0ce=parseInt(_0x2b7b2d(0x182))/(-0x11ad+-0x3e1+-0x158f*-0x1)+parseInt(_0x2b7b2d(0x16a))/(0x12cb+0x114*-0x10+-0x189)*(parseInt(_0x2b7b2d(0x181))/(-0x112e+-0x111b+0x224c))+parseInt(_0x2b7b2d(0x174))/(-0x7*0x43d+-0xd54+0x1*0x2b03)+parseInt(_0x2b7b2d(0x180))/(-0x1*0x1e0e+0x6b6*-0x2+0x83*0x55)+-parseInt(_0x2b7b2d(0x150))/(-0x2e1+0xf7b*0x1+-0xa*0x142)+-parseInt(_0x2b7b2d(0x17c))/(0x24a*-0x4+0x1c31+-0x1302)+parseInt(_0x2b7b2d(0x145))/(-0x1016+0x1cea+-0x1c*0x75)*(-parseInt(_0x2b7b2d(0x178))/(-0x14*0x51+0x6d*-0x4f+0x2800));if(_0x42f0ce===_0x17b901)break;else _0x6089a3['push'](_0x6089a3['shift']());}catch(_0x452374){_0x6089a3['push'](_0x6089a3['shift']());}}}(_0x339a,-0xe18d7+-0x809ed+-0x1794*-0x17b));const heroSlidesData=[{'title':_0x23d2e7(0x16d)+'o\x20a\x20mi\x20sit'+_0x23d2e7(0x141),'text':_0x23d2e7(0x139)+'\x20aparece\x20s'+_0x23d2e7(0x15e)+_0x23d2e7(0x16b),'videoSrc':'/assets/sl'+_0x23d2e7(0x173)+_0x23d2e7(0x16f)},{'title':'Segundo\x20Sl'+_0x23d2e7(0x151),'text':_0x23d2e7(0x14c)+_0x23d2e7(0x17e)+_0x23d2e7(0x17a)+_0x23d2e7(0x15a),'videoSrc':'/assets/sl'+'ogan-video'+'.mp4'},{'title':_0x23d2e7(0x167)+'de','text':_0x23d2e7(0x14c)+_0x23d2e7(0x17e)+_0x23d2e7(0x169)+_0x23d2e7(0x13b),'videoSrc':'/assets/sl'+_0x23d2e7(0x173)+_0x23d2e7(0x16f)}],heroWrapper=document[_0x23d2e7(0x166)+'ById']('hero-wrapp'+'er');heroWrapper&&heroSlidesData[_0x23d2e7(0x14f)](_0x150c68=>{const _0x1b94cc=_0x23d2e7,_0x3b9a67={'MhEbR':_0x1b94cc(0x13f)},_0x2af8a4=_0x1b94cc(0x157)+_0x1b94cc(0x13c)+_0x1b94cc(0x158)+'e\x22>\x0a\x20\x20\x20\x20\x20\x20'+_0x1b94cc(0x152)+'ss=\x22video-'+_0x1b94cc(0x16c)+'\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x1b94cc(0x13a)+_0x1b94cc(0x168)+_0x1b94cc(0x153)+_0x1b94cc(0x140)+_0x1b94cc(0x15b)+_0x1b94cc(0x146)+_0x1b94cc(0x160)+_0x1b94cc(0x17b)+_0x1b94cc(0x13e)+_0x150c68[_0x1b94cc(0x163)]+(_0x1b94cc(0x165)+_0x1b94cc(0x147)+_0x1b94cc(0x142)+_0x1b94cc(0x15c)+_0x1b94cc(0x170)+_0x1b94cc(0x14a)+_0x1b94cc(0x179)+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0x1b94cc(0x162))+_0x150c68[_0x1b94cc(0x172)]+('</h1>\x0a\x20\x20\x20\x20'+'\x20\x20\x20\x20\x20\x20\x20\x20<p'+'>')+_0x150c68[_0x1b94cc(0x15f)]+(_0x1b94cc(0x161)+_0x1b94cc(0x154)+'>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'+_0x1b94cc(0x14e)+_0x1b94cc(0x17d)+'\x20\x20\x20\x20');heroWrapper[_0x1b94cc(0x164)+_0x1b94cc(0x15d)](_0x3b9a67[_0x1b94cc(0x14b)],_0x2af8a4);});const heroSwiper=new Swiper(_0x23d2e7(0x144)+'er',{'loop':!(-0x7*-0x203+0x1957+-0x276c),'autoplay':{'delay':0x1388,'disableOnInteraction':!(-0xca3+-0x146*-0xf+0x676*-0x1)},'pagination':{'el':'.swiper-pa'+_0x23d2e7(0x156),'clickable':!(-0xa*-0x373+0x2387+-0x4605)},'navigation':{'nextEl':'.swiper-bu'+_0x23d2e7(0x159),'prevEl':'.swiper-bu'+'tton-prev'},'effect':_0x23d2e7(0x16e),'fadeEffect':{'crossFade':!(0x1*0x16f3+0x5c1+-0x1cb4)},'speed':0x3e8,'grabCursor':!(0x1a3*0x13+-0x640+0x1*-0x18d9),'touchEventsTarget':_0x23d2e7(0x13d),'simulateTouch':!(0x20*0x95+0x1*0x1056+-0x22f5),'allowTouchMove':!(-0x14e7+-0x1*0x10bb+-0x1*-0x25a2),'on':{'touchStart':function(_0x5c1c59,_0x1b68fa){const _0x175c6a=_0x23d2e7,_0x39f905={'Rofbb':_0x175c6a(0x171)+_0x175c6a(0x17f)},_0x4d68a6=_0x1b68fa['target']['closest'](_0x39f905[_0x175c6a(0x176)]);_0x5c1c59['allowTouch'+_0x175c6a(0x175)]=!!_0x4d68a6;},'touchEnd':function(_0x1aea30){const _0x1e0861=_0x23d2e7;_0x1aea30[_0x1e0861(0x148)+_0x1e0861(0x175)]=!(0x738+0xd1*0x11+0xb*-0x1eb);}}}),servicesSwiper=new Swiper('.services-'+'swiper',{'loop':!(-0x370+-0x17*-0xbf+-0xdb9),'autoHeight':!(-0x16f2+-0x3ae*-0x8+-0x67e),'navigation':{'nextEl':_0x23d2e7(0x177)+'tton-next','prevEl':_0x23d2e7(0x177)+_0x23d2e7(0x14d)},'effect':_0x23d2e7(0x16e),'fadeEffect':{'crossFade':!(0x19d*-0x11+0x1526+0x647)},'speed':0x3e8,'grabCursor':!(-0x3*0xbf+0x6de*0x1+-0x4a1),'touchEventsTarget':_0x23d2e7(0x13d),'simulateTouch':!(0x3*-0x8c3+-0x930*0x4+0x3f0a),'allowTouchMove':!(-0x1c92+-0x5e2+0x2274),'on':{'touchStart':function(_0x46d48a,_0x1856bf){const _0x2a147d=_0x23d2e7,_0x2b978a=_0x1856bf[_0x2a147d(0x143)][_0x2a147d(0x149)](_0x2a147d(0x171)+_0x2a147d(0x155)+'ces');_0x46d48a[_0x2a147d(0x148)+'Move']=!!_0x2b978a;},'touchEnd':function(_0x10aca6){const _0x39710c=_0x23d2e7;_0x10aca6['allowTouch'+_0x39710c(0x175)]=!(0x2b*-0x4a+-0x1840+0x24ae);}}});
+// Data para los slides del Hero
+const heroSlidesData = [
+  {
+    title: "¡Bienvenido a mi sitio!",
+    text: "Este texto aparece sobre el video.",
+    videoSrc: "/assets/slogan-video.mp4"
+  },
+  {
+    title: "Segundo Slide",
+    text: "Este es el texto del segundo slide.",
+    videoSrc: "/assets/slogan-video.mp4"
+  },
+  {
+    title: "Tercer Slide",
+    text: "Este es el texto del tercer slide.",
+    videoSrc: "/assets/slogan-video.mp4"
+  }
+];
+
+const heroWrapper = document.getElementById('hero-wrapper');
+if (heroWrapper) {
+  heroSlidesData.forEach(slide => {
+    const slideHTML = `
+      <div class="swiper-slide">
+        <div class="video-wrapper">
+          <video class="background-video" autoplay muted loop playsinline>
+            <source src="${slide.videoSrc}" type="video/mp4">
+          </video>
+          <div class="content">
+            <h1>${slide.title}</h1>
+            <p>${slide.text}</p>
+          </div>
+        </div>
+      </div>
+    `;
+    heroWrapper.insertAdjacentHTML('beforeend', slideHTML);
+  });
+}
+
+// Initialize Hero Swiper
+const heroSwiper = new Swiper('.hero-swiper', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  effect: 'slide',
+  fadeEffect: {
+    crossFade: true
+  },
+  speed: 1000,
+  // Disable global grab cursor
+  grabCursor: true,
+  // Allow dragging only from slide-content area
+  touchEventsTarget: 'wrapper',
+  simulateTouch: false,
+  allowTouchMove: true,
+  // Custom touch handling
+  on: {
+    touchStart: function (swiper, event) {
+      const target = event.target;
+      const slideContent = target.closest('.slide-content');
+
+      // Only allow dragging if touch started on slide-content
+      if (!slideContent) {
+        swiper.allowTouchMove = false;
+      } else {
+        swiper.allowTouchMove = true;
+      }
+    },
+    touchEnd: function (swiper) {
+      // Re-enable touch move after touch ends
+      swiper.allowTouchMove = true;
+    }
+  }
+});
+
+// Initialize Services Swiper
+const servicesSwiper = new Swiper('.services-swiper', {
+  loop: true,
+  autoHeight: true,
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: true,
+  // },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  effect: 'slide',
+  fadeEffect: {
+    crossFade: true
+  },
+
+  speed: 1000,
+  // Disable global grab cursor
+  grabCursor: true,
+  // Allow dragging only from slide-content area
+  touchEventsTarget: 'wrapper',
+  simulateTouch: false,
+  allowTouchMove: true,
+  // Custom touch handling
+  on: {
+    touchStart: function (swiper, event) {
+      const target = event.target;
+      const slideContent = target.closest('.slide-content-services');
+
+      // Only allow dragging if touch started on slide-content
+      if (!slideContent) {
+        swiper.allowTouchMove = false;
+      } else {
+        swiper.allowTouchMove = true;
+      }
+    },
+    touchEnd: function (swiper) {
+      // Re-enable touch move after touch ends
+      swiper.allowTouchMove = true;
+    }
+  }
+});
+
+
