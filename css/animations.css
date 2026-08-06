@@ -41,11 +41,13 @@
   z-index: 2;
 }
 
-.rack-animation {
-  position: relative;
+
+.rack-animation-container {
   width: 50%;
-  height: 800px;
-  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .server-visual {

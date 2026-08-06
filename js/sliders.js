@@ -1,20 +1,27 @@
 // Data para los slides del Hero
 const heroSlidesData = [
   {
-    title: "¡Bienvenido a mi sitio!",
-    text: "Este texto aparece sobre el video.",
+    title: "",
+    // title: "¡Bienvenido a mi sitio!",
+    text: "",
+    // text: "Este texto aparece sobre el video.",
     videoSrc: "/assets/slogan-video.mp4"
   },
   {
-    title: "Segundo Slide",
-    text: "Este es el texto del segundo slide.",
+    title: "",
+    // title: "¡Bienvenido a mi sitio!",
+    text: "",
+    // text: "Este texto aparece sobre el video.",
     videoSrc: "/assets/slogan-video.mp4"
   },
   {
-    title: "Tercer Slide",
-    text: "Este es el texto del tercer slide.",
+    title: "",
+    // title: "¡Bienvenido a mi sitio!",
+    text: "",
+    // text: "Este texto aparece sobre el video.",
     videoSrc: "/assets/slogan-video.mp4"
-  }
+  },
+
 ];
 
 const heroWrapper = document.getElementById('hero-wrapper');

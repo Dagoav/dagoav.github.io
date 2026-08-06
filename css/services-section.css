@@ -1,9 +1,20 @@
+#slogan {
+  position: relative;
+}
+
 /* Services Section */
 .services-section {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
   padding: 80px 5%;
-  background: var(--white);
   scroll-margin-top: 50px;
+  z-index: 10;
+  background: rgba(129, 212, 205, 0.205);
+  backdrop-filter: blur(2px);
 }
+
 
 .services-info-content {
   font-size: 20px;
@@ -18,7 +29,7 @@
 .swiper-slide {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
 }
@@ -26,6 +37,7 @@
 .service-video {
   width: 50%;
   height: auto;
+  margin-top: 80px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -67,6 +79,10 @@
     padding: 0 50px;
     font-size: 16px;
     text-align: justify;
+    width: 100%;
+  }
+
+  .rack-animation-container {
     width: 100%;
   }
 
